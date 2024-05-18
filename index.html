@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appstream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="SRC/logoplay.png" alt="PLAY WAVE Logo" width="100px"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+        <button onclick="sair()">Sair</button>
+    </header>
+    
+    <section class="cont_home">
+        <div class="home_info">
+            <h1>PlayWave</h1>
+            <h2>Aqui as ondas te arrastam para um mundo de novas experiências</h2>
+            <button class="btn" id="verNovidadesBtn">Ver Novidades</button>
+        </div>
+    </section>
+
+    <div class="separar"></div>
+
+    <section class="cont_novidades" id="novidadesSection">
+        <div class="nov_text"> 
+            <h1>Novidades</h1>
+            <h2>Venha ver o que a onda trouxe</h2>
+        </div>
+    </section>
+
+    <!-- Carrossel de vídeos -->
+    <section class="cont_carrossel">
+        <div class="carrossel-container">
+            <button class="carrossel-btn prev-btn" onclick="moveCarrossel(-1)">&#10094;</button>
+            <div class="carrossel-slide">
+                <div class="carrossel-item">
+                    <video controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carrossel-item">
+                    <video controls>
+                        <source src="videos/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carrossel-item">
+                    <video controls>
+                        <source src="videos/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <button class="carrossel-btn next-btn" onclick="moveCarrossel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="console.js"></script>
+    <script src="scroll.js"></script>
+    <script src="carrossel.js"></script>
+</body>
+</html>
