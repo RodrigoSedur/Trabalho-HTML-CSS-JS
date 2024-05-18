@@ -1,0 +1,187 @@
+/* Geral */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #181920;
+    height: 90px;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+header button {
+    color: white;
+    padding: 10px 29px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    background-color: blueviolet;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+header button:hover {
+    background-color: rgb(103, 32, 170);
+}
+
+header nav ul li {
+    color: rgb(126, 125, 125);
+    transition: all 0.2s ease-in-out;
+}
+
+header nav ul li:hover {
+    color: rgb(255, 255, 255);
+    filter: brightness(100%);
+}
+
+/* Botão */
+.btn {
+    color: white;
+    padding: 10px 29px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    background-color: blueviolet;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(103, 32, 170);
+}
+
+
+/* Home */
+.cont_home {
+    min-height: 90vh;
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: calc(90px + 100px);
+}
+
+.home_info {
+    padding: 100px 0;
+}
+
+.home_info h1 {
+    margin-bottom: 20px;
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.home_info h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+/* Div Separar */
+.separar {
+    background-color: blueviolet;
+    height: 10px;
+}
+
+/* Novidades */
+.cont_novidades {
+    background-color: #181920;
+    padding: 30px 0; /* Ajustar o padding para reduzir o espaço */
+    text-align: center;
+}
+
+.nov_text {
+    padding: 30px 0; /* Reduzir o padding */
+}
+
+.nov_text h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.nov_text h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Carrossel de vídeos */
+.cont_carrossel {
+    background-color: #181920;
+    padding: 10px 0; /* Ajustar o padding para reduzir o espaço */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carrossel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.carrossel-item video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
