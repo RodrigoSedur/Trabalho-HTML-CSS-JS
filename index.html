@@ -16,8 +16,8 @@
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Novidades</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="planos.html">Planos</a></li> <!-- Link para a nova página de Planos -->
+                <li><a href="sobre.html">Sobre</a></li> <!-- Link para a nova página de Sobre -->
             </ul>
         </nav>
         <button onclick="sair()">Sair</button>
@@ -33,7 +33,7 @@
 
     <div class="separar"></div>
 
-    <section class="cont_novidades" id="novidadesSection">
+    <section class="cont_novidades" id="novidadesSection"> <!-- Adiciona o id para navegação -->
         <div class="nov_text"> 
             <h1>Novidades</h1>
             <h2>Venha ver o que a onda trouxe</h2>
@@ -67,6 +67,31 @@
             <button class="carrossel-btn next-btn" onclick="moveCarrossel(1)">&#10095;</button>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contato</h3>
+                <p>Email: contato@playwave.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="social-links">
+                <h3>Redes Sociais</h3>
+                <a href="#">
+                    <img src="SRC/facebook-icon.png" alt="Facebook" width="30px">
+                    <span>Facebook</span>
+                </a>
+                <a href="#">
+                    <img src="SRC/instagram-icon.png" alt="Instagram" width="30px">
+                    <span>Instagram</span>
+                </a>
+                <a href="#">
+                    <img src="SRC/twitter-icon.png" alt="Twitter" width="30px">
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="console.js"></script>
     <script src="scroll.js"></script>

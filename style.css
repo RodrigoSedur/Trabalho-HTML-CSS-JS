@@ -126,10 +126,52 @@ header nav ul li:hover {
     font-weight: 600;
 }
 
+/* Rodapé */
+footer {
+    background-color: #181920;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info, .social-links {
+    margin: 10px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.social-links span {
+    font-size: 1em;
+}
+
 /* Carrossel de vídeos */
 .cont_carrossel {
     background-color: #181920;
-    padding: 10px 0; /* Ajustar o padding para reduzir o espaço */
+    padding: 10px 0; 
     display: flex;
     justify-content: center;
     align-items: center;
